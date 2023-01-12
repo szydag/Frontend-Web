@@ -1,0 +1,23 @@
+.me{
+    text-align: center;
+}
+
+.me img {
+    border-radius: 150px;
+}
+
+.me span {
+    font-style: italic;
+}
+
+.me ul li {
+    list-style: none;
+    margin-left: -30px;
+}
+.me ul li a{
+    text-decoration: none;
+}
+
+#sarı {
+    color: rgb(255, 201, 7);
+}
