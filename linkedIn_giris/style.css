@@ -1,0 +1,437 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Thin.ttf');
+}body {
+    font-family: 'Roboto';
+    overflow-x: hidden;
+ }
+ /*NAVBAR*/
+#navbar .container .row {
+    margin: 0px -50px 0px -50px;
+}
+.logo {
+    margin-top: 15px;
+}
+#navbar .container .row .col-lg-6 .container {
+    margin-top: 14px;
+}
+#navbar .container .row a {
+    color:#919191 ;
+}
+#navbar .container .row a:hover {
+    color: black;
+    text-decoration: none;
+}
+#navbar .container .row {
+    font-size: 18px;
+}
+
+#navbar .container .row .ikinci {
+    text-align: center;
+}
+.ac{
+    border-radius: 25px;
+    border-color: blue;
+    border-style: solid;
+    border-width: 1px;
+    padding: 15px;
+}
+.hemen, .ac {
+    margin-top: 15px;
+}
+.ac:hover {
+    background-color: rgba(0, 0, 255,0.1);
+    color: darkblue;
+}
+.hemen {
+    border-radius: 25px;
+    padding: 15px;
+}
+.hemen a {
+    color: black;
+}
+.hemen:hover {
+    background-color: gainsboro;
+}
+
+#section {
+    margin-right: -70px;
+}
+
+#section .container .row h1{
+    color: rgb(145, 92,77);
+    font-size: 60px;
+}
+
+#section .container .row {
+    margin: 50px -80px;
+}
+#section ul {
+    margin-top: 35px;
+}
+#section ul li {
+    list-style: none;
+    border: 1px solid rgb(148, 148, 148);
+    padding: 15px;
+    margin: 10px;
+    margin-left: -35px;
+    border-radius: 5px;
+}
+#section ul li a{
+    color: black;
+}
+#section ul li .ikon {
+    color:black;
+    text-align: right;
+}
+
+#section .container .row .col-lg-5 ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
+#adam {
+    margin-right: -120px;
+}
+#section ul li:hover{
+    
+    color: black;
+    box-shadow: 2px 2px 2px 2px rgb(148, 148, 148);
+}
+#section ul li a:hover{
+    text-decoration: none;
+}
+
+    /*SECTİON2 */
+
+#section2 {
+    background-color: rgb(243, 242, 240);
+}
+#sizin h1{
+margin-top: 20px;
+font-size: 50px;
+}
+#butonlar ul li {
+    list-style: none;
+    font-size: 20px;
+    line-height: 30px;
+    height: 30px;
+    margin:30px 6px 0px 0px;
+}
+#butonlar a{
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 12px 24px;
+    font-weight: bold;
+    height: 56px;
+}
+#butonlar a:hover {
+    background-color:#e0e0e0 ;
+}
+
+ #butonlar ul {
+    display: flex;
+    margin: 0px;
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#sizin, #butonlar {
+    margin-top: 80px;
+}
+
+h6 {
+    margin: 0px;
+    margin-bottom: -30px;
+}
+button {
+    font-size: 20px;
+    border: 0 ;
+    border-radius: 3px;
+    height: 50px;
+    margin-top: 15px;
+}
+button:hover{
+    background-color:#e0e0e0;
+}
+button i {
+    margin-left: 7px;
+}
+#box {
+    height: 200px;
+    overflow: hidden;
+}
+#section2 {
+    padding-bottom: 50px;
+}
+/*SECTİON3*/
+
+#section3 {
+    background-color: rgb(241, 236, 229);
+}
+#section3 h1 {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-weight: bold;
+    color: rgb(181,72,41);
+}
+
+.mavi {
+    margin-top: 100px;
+    padding:10px;
+    padding-bottom: 30px;
+    border: 2px solid rgb(10, 119, 200);
+    border-radius: 40px;
+    color: rgb(10, 119,200);
+    font-weight: bold;
+}
+
+.mavi button:hover {
+    background-color: rgba(10, 119,200, 0,5);
+}
+
+/*SECTİON4*/
+
+#section4 {
+    background-color: rgb(243, 242, 240);
+   width: 100%;
+}
+#section4 h1 {
+    font-weight: bold;
+    color: rgb(148,95,81);
+}
+
+.cerceve {
+    width: 100%;
+    padding: 100px 100px ;
+    overflow: hidden;
+    position: relative;
+}
+.galeri {
+    width: 300%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: all .4s ease;
+}
+.yazı {
+    width: 50%;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.resim {
+    width: 50%;
+    margin-left: 60px;
+}
+#fotograf{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#ilerigeri {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    
+}
+#ilerigeri button {
+    padding:0 20px ;
+}
+#ilerigeri button:hover {
+    border-radius: 20px;
+    color: black;
+}
+#ilerigeri button:disabled {
+    cursor: not-allowed;
+}
+
+#section5 .col-lg-6{
+    margin-top: 100px;
+}
+#section5 .col-lg-6 img {
+    margin-bottom: 60px;
+}
+
+#tanidiginiz {
+    margin-top:40px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 45px;
+    width: 230px;
+    text-align: center;
+    font-size: 18px;
+}
+#tanidiginiz a{
+    color: black;
+    text-decoration: none;
+}
+#tanidiginiz:hover{
+    background-color: rgba(0, 0, 0,0.1);
+}
+
+#konu {
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid rgb(151, 151, 151);
+    border-radius: 5px;
+    width: 400px;
+    font-weight: bold;
+}
+#konu a {
+    color: black;
+    text-decoration: none;
+}
+#konu:hover {
+    background-color:rgba(0, 0, 0,0.1) ;
+}
+ /*SECTİON6*/
+#section6 {
+    height: 840px;
+    width: 100%;
+    background-image: url("resim/backgraund2.png");
+    padding: 150px 400px 0px 200px;
+}
+#section6 h1{
+    font-size: 55px;
+    font-weight: bold;
+}
+
+#section6 #baslayin  button{
+    width: 150px;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: rgb(10, 102, 194);
+    color: white;
+}
+#section6 #baslayin  button:hover {
+    background-color: #053362;
+}
+
+#section7 {
+    background-color: #f3f2f0; 
+    font-weight: bold;
+    margin-top: 30px;
+    padding-top:30px;
+    
+}
+#section7 h6 {
+    font-size: 12px;
+}
+#section7 .container .row {
+    margin: 0 160px 0 100px;
+}
+#section7 a{
+    color: #747283;
+}
+#section7 a:hover {
+    color:  rgb(10, 102, 194);
+}
+#section7 ul {
+    margin-top: 30px;
+    text-align: left;
+    padding-left: 0;
+}
+#section7 ul li {
+    list-style: none;
+    font-size: 12px;
+}
+#section7 #logoyeri {
+    text-align: center;
+    font-weight:1500;
+ }
+/*SECTİON8*/
+
+#section8 .col-lg-1 {
+    padding: 0;
+    margin: 0;
+    font-size: 11px;
+    text-align: center;
+    font-weight: bold;
+}
+#section8 .col-lg-1 a{
+    color: #747283;
+}
+#section8 .col-lg-1 a:hover {
+    color:  rgb(10, 102, 194);
+}
+ #section8 .logo {
+    font-size: 10px;
+    height: 5px;
+ }
+
+
+ @media only screen and (max-width:600px){
+    #navbar .logo img {
+        width: 100px;
+    }
+    #navbar .ikinci {
+        font-size: 2px;
+    }
+    #section #adam {
+        text-align: center;
+    }
+    #section #adam img {
+        width: 300px;
+    }
+    #section3 .mavi {
+        margin-top: -200px;
+        margin-bottom: 100px;
+    }
+    #section4 {
+        margin: 0;
+        width: 100%;
+    }
+    .galeri  {
+        padding: 0px;
+        margin: 0px;
+    }
+    .cerceve {
+        margin: 0;
+        padding: 0;
+    }
+    #section4 #fotograf{
+        flex-direction: column-reverse;
+        width: 40%;
+        font-size: 10px;
+    }
+    
+    #section4 .yazı{
+         width: 300px;
+    }
+    #section4 .resim{
+        width: 100%;
+    }
+    .resim img {
+        width: 300px;
+    }
+    .yazı h1 {
+        font-size: 23px;
+    }
+    .yazı h2 {
+        font-size: 18px;
+    }
+    .galeri {
+        display: flex;
+        flex-direction: row;
+    }
+    #section6 {
+        background:none;
+        padding: 100px 0 10px 5px;
+        height: 250px;
+    }
+    #section6 h1{
+        font-size: 35px;
+        font-weight: lighter;
+    }
+    #section7 {
+        margin-left: -400px;
+        font-size: medium;
+    }
+    #section8 .logo svg {
+        width: 50px;
+    }
+ }
