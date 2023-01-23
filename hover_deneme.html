@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX</title>
+    <style>
+        .kutu {
+    width: 800px;
+    height: 600px;
+    background-color: rgb(150, 199, 243);
+}
+.satir1 {
+    display: flex;
+    justify-content:space-between;
+    position: relative;
+}
+.satir2 , .satir3 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.box {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+}
+.box:hover {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    background-color: yellowgreen;
+    transition: width 1.5s, height 1.5s, transform 2s;
+}
+#box1 {
+    background-color: green;
+    transition: 2s ease;
+}
+#box1:hover {
+    background-color: yellowgreen;
+}
+#box4 {
+    background-color: purple;
+    color: red;
+    transition: 2s ease;
+    
+}
+#box4:hover {
+    background-color: transparent;
+}
+#box2 {
+    background-color: orange;
+    font-style: italic;
+    transition: 2s ease;
+}
+#box3 {
+    background-color: blue;
+    text-decoration: line-through;
+    transition: 2s ease;
+}
+#box5 {
+    background-color: yellow;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bold;
+    transition: 2s ease;
+}
+#box5:hover{
+    background-color: white;
+}
+    </style>
+</head>
+
+<body>
+ <div class="kutu">
+    <div class="satir1">
+        <div class="box" id="box1">
+            <span><b>Kutu 1</b></span>
+        </div>
+        <div class="box" id="box4">
+            <span>Kutu 4</span>
+        </div>
+    </div>
+    <div class="satir2">
+        <div class="box" id="box2">
+            <span>Kutu 2</span>
+        </div>
+        <div class="box" id="box3">
+            <span>Kutu 3</span>
+        </div>
+    </div>
+    <div class="satir3">
+        <div class="box" id="box5">
+            <span>Özel Kutu</span>
+        </div>
+    </div>
+ </div>
+</body>
+
+</html>
