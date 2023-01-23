@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, rgb(51, 0, 65) , rgb(206, 118, 253));
+        }
+        #butonlar {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            color: white;
+            margin-top: 120px;
+            cursor: pointer;
+        }
+        .col-3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .col-3 button {
+            background-color: transparent;
+            border: 0;
+            color: white;
+            margin: 10px 20px;
+        }
+
+        #buton1 {
+            color:rgb(255, 0, 144) ;
+        }
+        .container{
+            margin: auto;
+            text-align: center;
+            background-color: white;
+            width: 500px;
+            padding: 15px;
+        }
+       .container input {
+            width: 480px;
+            height: 30px;
+            margin: 10px 0;
+            border: 0.4px solid rgb(192, 190, 190);
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .container input:focus {
+            outline-style: none;
+            border: 2px solid rgb(187, 40, 0);
+        }
+        .buton { 
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+       .container button{
+            background-color: rgb(255, 0, 144);
+            padding: 10px 20px;
+            color: white;
+            border-radius: 20px;
+            border: 0;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .container button:hover {
+            border: 2px double rgb(255, 69, 184);
+        }
+        #box2, #box3 {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="butonlar">
+        <div class="col-3" >
+            <i id="buton1" class="fa-solid fa-circle-1"></i>
+            <button  >PERSONAL DETAİLS</button>
+        </div>
+        <div class="col-3" >
+            <i id="buton2" class="fa-solid fa-circle-2"></i>
+            <button  >SOCİAL PROFİLES</button>
+        </div>
+        <div class="col-3" >
+            <i id="buton3" class="fa-solid fa-circle-3"></i>
+            <button  >ACCOUNT SETUP</button>
+        </div>
+    </div>
+    
+    <div class="anacontainer">
+        <div class="container" id="box1">
+            <h1>Personel Details</h1>
+            <h5>Tellus something more about you</h5>
+            <input type="text" name="" id="firstName"  placeholder="First Name">
+            <input type="text" name="" id="lastName"  placeholder="Last Name">
+            <input type="number" name="" id="phone"  placeholder="Phone">
+            <div class="buton">
+                <button onclick="Buton('next1')">Next</button>
+            </div>
+        </div>
+        <div class="container " id="box2">
+            <h1>Social Profiles</h1>
+            <h5>Your presenceon the social network</h5>
+            <input type="text" placeholder="Twitter">
+            <input type="text" placeholder="Facebook">
+            <input type="text" placeholder="Instagram">
+            <div class="buton">
+                <button onclick="Buton('prev1')">Previous</button>
+                <button onclick="Buton('next2')">Next</button>
+            </div>
+        </div>
+        <div class="container" id="box3">
+            <h1>Create Your Account</h1>
+            <h5>Fill in yor cdedentials</h5>
+            <input type="email" name="" id="email"  placeholder="Email">
+            <input type="password" name="" id="password"  placeholder="Password">
+            <input type="password" name="" id="confirmPassword"  placeholder="Confirm Password">
+            <div class="buton">
+                <button onclick="Buton('prev2')">Previous</button>
+                <button>Submit</button>
+            </div>
+         </div>
+    </div>
+
+    <script>    
+    function Buton(deger) {
+        if (deger == 'next1' || deger == 'prev2') {
+            document.querySelector("#box1").style.display = "none";
+            document.querySelector("#box2").style.display = "block";
+            document.querySelector("#box3").style.display = "none";
+            document.querySelector("#buton1").style.color= "white";
+            document.querySelector("#buton2").style.color= "rgb(255, 0, 144)";
+            document.querySelector("#buton3").style.color= "white";
+        }
+        else if (deger== 'prev1') {
+            document.querySelector("#box1").style.display = "block";
+            document.querySelector("#box2").style.display = "none";
+            document.querySelector("#box3").style.display = "none";
+            document.querySelector("#buton1").style.color= "rgb(255, 0, 144)";
+            document.querySelector("#buton2").style.color= "white";
+            document.querySelector("#buton3").style.color= "white";
+        } 
+        else if (deger == 'next2') {
+            document.querySelector("#box1").style.display = "none";
+            document.querySelector("#box2").style.display = "none";
+            document.querySelector("#box3").style.display = "block";
+            document.querySelector("#buton1").style.color= "white";
+            document.querySelector("#buton2").style.color= "white";
+            document.querySelector("#buton3").style.color= "rgb(255, 0, 144)";
+        }
+    }
+    </script>
+    <script src="https://kit.fontawesome.com/6a28faa957.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
